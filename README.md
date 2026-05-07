@@ -45,4 +45,23 @@ pintar en la web
 eventos
 ```
 
+## Apuntes Java Script 3
+```
+=== es como decir igual hasta el tipo de dato
+== no está recomendado 
++= es como decir lo que avía mas otra cosa
 
+```
+# casting
+
+```
+lef numero = Number(numreoString)
+lef numeroString = String(9)
+```
+# prompt
+
+```
+para introducir datos, abre un dialogo para introducir datos
+let edadIntroducida = prompt( 'Introduce la edad')
+
+```
