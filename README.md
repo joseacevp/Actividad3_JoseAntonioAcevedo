@@ -1,4 +1,34 @@
 # Actividad3
+
+# siempre al principio
+
+````
+*{
+     box-sizing: border-box;
+}
+````
+# flex
+````
+se trebaja con un contendor principa 
+el contendor principal es el que organiza los contenidos en 
+filas o columnas
+centralos 
+llevarlo a un lado o a otro
+
+
+
+
+````
+
+
+## flex-grow
+````
+segun el numero crece mas o mento
+
+````
+
+
+
 ## QuerySelector de Java Script
 ````
 let nodoCadrado = document.querySelector('#cuadrado')
