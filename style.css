@@ -2,229 +2,129 @@
     box-sizing: border-box;
 }
 
-
-.header {
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #ccc;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 
 }
 
-.navegador ul {
+#cabecera {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+    padding: 20px 50px;
+}
+
+#cabecera h1 {
+    margin: 0;
+}
+
+#cabecera nav ul {
     list-style: none;
-    padding: 1rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-.navegador li {
-    margin-left: 20px;
-}
-
-.navegador a {
+#cabecera nav a {
     text-decoration: none;
     color: #333;
 }
 
 #boton-contacto {
+    border: solid 1px #333;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #14a8ec;
-    color: white;
-
 }
 
-.titulo {
-    font-size: 26px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#imagen-articulo1 {
-
-    width: 300px;
-    height: 350px;
-    margin-right: 5rem;
-}
-
-
-.contenedor-articulo1 {
+.articulo1 {
     display: flex;
     flex-direction: row;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 5rem;justify-content: space-around;
-    width: auto;
-    height: auto;
+    padding: 20px 50px;
 }
 
-.caja-contenido-articulo1 {
-    display: flex;
-    flex-direction: column;
-    
+.articulo1 img {
+    width: 25%;
+    margin-right: 20px;
 }
 
-#etiqueta-oferta {
-    color: #f14d4d;
-    font-size: 1rem;
+.contenido-articulo1 {
+    width: 75%;
 }
 
-.caja-precio-compra {
+.contenedor-precio {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
-
-
-}
-
-#precio {
-    margin-right: 50px;
+    align-items: center;
+    gap: 20px;
 }
 
 #boton-comprar {
+    background-color: #007BFF;
+    color: white;
+    border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #14a8ec;
-    color: white;
-    width: 100px;
-
 }
 
-.nav-opciones ul {
+.contenido-articulo1 nav ul {
     display: flex;
-    flex-direction: row;justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 0;
+    flex-direction: row;
+    gap: 20px;
     margin: 0;
+    padding: 0;
+
 }
 
-.nav-opciones li {
+.contenido-articulo1 nav li {
     list-style: none;
+
 }
 
-.nav-opciones a {
+.contenido-articulo1 nav a {
     display: inline-flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 10px;
     text-decoration: none;
     color: #333;
-    font-size: 0.75rem;
 }
 
-.nav-opciones img {
-    width: 1rem;
-    height: auto;
-    display: block;
+.contenido-articulo1 nav a img {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.articulo-accesorios {
+.accesorios {
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-top: 5rem;justify-content: space-around;
-    width:auto;
-    height: 25%;
-
+    gap: 20px;
+    padding: 20px 50px;
 }
-
-.contenedor-accesorios {
+.accesorios h2 {
+    margin: 0;
+}
+.contenedor-cajas {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-
+    gap: 20px;
+    justify-content: space-between;
 }
 
-.contenedor-accesorios .caja {
-    border: solid 1px rgb(207, 205, 205);
+.caja-accesorio {
+    width: 20%;
+    border: solid 1px #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+.caja-accesorio img {
     width: 100%;
     height: auto;
-    margin: 10px;
-    padding: 10px;
-}
-
-.caja {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-
-}
-
-.caja img {
-    width: 200px;
-    height: 150px;
-    align-self: center;
-}
-
-#botonNuevo {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #14a8ec;
-    color: white;
-    width: 100px;
-
-}
-
-#botonOferta {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #f14d4d;
-    color: white;
-    width: 100px;
-
-}
-
-.formulario{
-    display: grid;
-    grid-template-columns: 80% auto;
-    grid-template-rows: repeat(3 1fr);
-    background-color: #c1deeb;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    padding:2rem;
-}
-.formulario p{
-    grid-column: 1/1;
-    padding-right: 1rem;
-}
-.formulario .input-nombre{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    grid-column: 2/2;
-    grid-row: 1/1;
-}
-.formulario .input-email{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    grid-column: 2/2;
-    grid-row: 2/2;
-}
-.formulario input{
-    height: 2rem;
-}
-.formulario button{
-    grid-column: 2/2;
-    grid-row: 3/3;
-    border-radius: 5px;
-    background-color: #14a8ec;
-    color: white;
-    width: 100px;
-    height: 40px;
-    margin-top: 1rem;
-}
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-top: #ccc solid 1px;
+    margin-bottom: 20px;
 }

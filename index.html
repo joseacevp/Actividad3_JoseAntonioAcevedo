@@ -1,16 +1,13 @@
 <!doctype html>
-<html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <header>
-    <div class="header">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="cabecera">
       <h2 class="titulo">agoodshop</h2>
       <nav class="navegador">
         <ul>
@@ -20,112 +17,80 @@
           <li><a href="#" id="boton-contacto">Contactar</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
-  <article>
-    <div class="contenedor-articulo1">
-      <div class="caja-imagen">
-        <img id="imagen-articulo1" src="imagen1.png" alt="esto es una imagen" />
-      </div>
-      <div class="contendor-articulo1-detalle">
-        <div class="caja-oferta">
-          <h2 id="etiqueta-oferta">OFERTA</h2>
-        </div>
-
-        <div class="caja-titulo-articulo1">
-          <h2 id="titulo-articulo1">Compra un iFhone 13 Pro</h2>
-        </div>
-
-        <div class="caja-contenido-articulo1">
-          <p>
-            iFhone 13: Tu nuevo superpoder. Nuestro sistema de cámara dual más
-            avanzado. El chip que hace morder el polvo a la competancia. Un
-            subidón de autonomía que vaya si notarás. Ceramic Shield, más duro
-            que cualquier vidrio de smartphone
-          </p>
-          <p>
-            Pantalla Super Retina XDR de 6.1 pulgadas. Diseño robusto con
-            bordes planos y resistente al agua.
-          </p>
-        </div>
-        <div class="caja-precio-compra">
+    </header>
+    <article class="articulo1">
+      <img src="imagen1.png" alt="esto es una imagen" />
+      <div class="contenido-articulo1">
+        <h2 id="etiqueta-oferta">OFERTA</h2>
+        <h2 id="titulo-articulo1">Compra un iFhone 13 Pro</h2>
+        <p>
+          iFhone 13: Tu nuevo superpoder. Nuestro sistema de cámara dual más
+          avanzado. El chip que hace morder el polvo a la competancia. Un
+          subidón de autonomía que vaya si notarás. Ceramic Shield, más duro que
+          cualquier vidrio de smartphone
+        </p>
+        <p>
+          Pantalla Super Retina XDR de 6.1 pulgadas. Diseño robusto con bordes
+          planos y resistente al agua.
+        </p>
+        <div class="contenedor-precio">
           <h2 id="precio">938.99 €</h2>
-
           <button id="boton-comprar">Comprar</button>
         </div>
-
-        <nav class="nav-opciones">
+        <nav>
           <ul>
             <li>
               <a href="#">
                 <img src="iconoTienda.svg" alt="tienda" />
-                Envío rápido, gratuito y sin contacto</a>
+                Envío rápido, gratuito y sin contacto</a
+              >
             </li>
             <li>
               <a href="#">
                 <img src="iconoDevolver.svg" alt="tienda" />
-                Devoluciones fáciles y gratuitas</a>
+                Devoluciones fáciles y gratuitas</a
+              >
             </li>
             <li>
               <a href="#">
                 <img src="iconoPago.svg" alt="tienda" />
-                Posibilidad de pago a plazos</a>
+                Posibilidad de pago a plazos</a
+              >
             </li>
           </ul>
         </nav>
+      </div>
+    </article>
 
-      </div>
-    </div>
-  </article>
-  <article class="articulo-accesorios">
-    <h2>Accesorios recomendados</h2>
-    <div class="contenedor-accesorios">
-      <div class="caja"><img src="imagen1.png" alt="esto es una imagen" />
-        <h3>Cargador</h3>
-        <p>El adaptador de corriente USB-C de 20W es muy rápido y eficientem así que va de perlas para cargar tus
-          dispositivos en cualquier lugar</p>
-      </div>
-      <div class="caja"><img src="imagen1.png" alt="esto es una imagen" />
-        <h3>Base de carga inalámbrica</h3>
+    <article class="accesorios">
+      <h2>Accesorios recomendados</h2>
+      <div class="contenedor-cajas">
+        <div class="caja-accesorio">
+          <img src="imagen1.png" alt="esto es una imagen" />
+          <h3>Cargador</h3>
+          <p>
+            El adaptador de corriente USB-C de 20W es muy rápido y eficientem así
+            que va de perlas para cargar tus dispositivos en cualquier lugar
+          </p>
+        </div>
+        <div class="caja-accesorio">
+          <img src="imagen1.png" alt="esto es una imagen" />
+          <h3>Base de carga inalámbrica</h3>
 
-        <button id="botonOferta">Oferta</button>
-        <p>Sistema de soporte para que sigas usando tu smartphone cómodamente mientras lo cargas. Compatible con carga
-          rápida de 20W.</p>
-      </div>
-      <div class="caja"><img src="imagen1.png" alt="esto es una imagen" />
+          <button id="botonOferta">Oferta</button>
+          <p>Sistema de soporte para que sigas usando tu smartphone cómodamente mientras lo cargas. Compatible con carga
+            rápida de 20W.</p>
+        </div>
+        <div class="caja-accesorio"><img src="imagen1.png" alt="esto es una imagen" />
         <h3>Funda piel</h3>
         <p>Fabricadas en piel europea curtida y teñida con un proceso especial, son suaves al tacto y adquieren un tono
-          natural con el tiempo. Los botones de aluminio combinan a la perfeción con el acabado de la piel.</p>
-      </div>
-      <div class="caja"><img src="imagen1.png" alt="esto es una imagen" />
-        <h3>Nuevo</h3>
+          natural con el tiempo. Los botones de aluminio combinan a la perfeción con el acabado de la piel.</p></div>
+        <div class="caja-accesorio"><img src="imagen1.png" alt="esto es una imagen" />
+        <h3>Cargador</h3>
         <button id="botonNuevo">Nuevo</button>
         <p>El adaptador de corriente USB-C de 20 W es muy rápido y eficiente, así que va de perlas para cargar tus
-          dispositivos en cualquier lugar.</p>
+          dispositivos en cualquier lugar.</p></div>
       </div>
-    </div>
-    </div>
-  </article>
-  <article class="formulario">
-    <h1>Participa en el sorteo de un iFhone 13</h1>
-    <p>Este verano,¡venimos cargados de premios! Así que antes de irete de vacaciones, ¡participa en nuestro sorteo! y
-      podrás llevarte un regalo increíble como un nuevo iFhone 13</p>
-    <p>Rellena este formulario para ser uno de los afortunados</p>
-    <div class="input-nombre">
-      <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id="nonbre" placeholder="nombre">
-
-    </div>
-    <div class="input-email">
-      <label for="email">Email</label>
-      <input type="text" name="email" id="email" placeholder="email@email.com">
-
-    </div>
-    <button id="enviar">Enviar</button>
-  </article>
-  <footer>
-    <h3><span class="copyright" aria-label="copyright">&copy;</span>aggodshop</h3>
-  </footer>
-</body>
-
+    </article>
+  </body>
 </html>
