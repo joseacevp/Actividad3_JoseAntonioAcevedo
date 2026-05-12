@@ -50,12 +50,21 @@ body {
     width: 25%;
     margin-right: 20px;
 }
+.imagen-gb {
+    width: 4rem;
+    height: 2rem;
+    position: absolute;
+    margin: 20px;
+}
 
 
 .contenido-articulo1 {
     width: 75%;
 }
-
+#etiqueta-oferta {
+    color: red;
+    font-size: 1rem;
+}
 .contenedor-precio {
     display: flex;
     flex-direction: row;
@@ -96,7 +105,7 @@ body {
 .contenido-articulo1 nav a img {
     display: inline-block;
     vertical-align: middle;
-    width: 25%;
+    width: 20%;
 }
 
 .accesorios {
@@ -128,6 +137,22 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+}
+#botonOferta {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: solid 1px rgb(142, 9, 9);
+    text-align: center;
+}
+#botonNuevo{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .formulario {
@@ -202,6 +227,7 @@ footer {
     
     .contenido-articulo1 a img{
         width: 25px;
+        flex-wrap: wrap;
     }
     .contenedor-cajas {
         flex-direction: column;
@@ -217,5 +243,11 @@ footer {
         width: 100%;
         justify-content: space-around;
     }
+    .imagen-gb {
+    width: 4rem;
+    height: 2rem;
+    position: absolute;
+    margin: 20px;
+}
 
 }
