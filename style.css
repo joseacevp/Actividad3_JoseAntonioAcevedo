@@ -46,10 +46,11 @@ body {
     padding: 20px 50px;
 }
 
-.articulo1 img {
+.imagen-articulo1 {
     width: 25%;
     margin-right: 20px;
 }
+
 
 .contenido-articulo1 {
     width: 75%;
@@ -95,6 +96,7 @@ body {
 .contenido-articulo1 nav a img {
     display: inline-block;
     vertical-align: middle;
+    width: 25%;
 }
 
 .accesorios {
@@ -171,9 +173,49 @@ footer {
 }
 
 @media  (max-width: 768px) {
-    body{
+    #cabecera {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 10px;
+        gap: 1px;
+    }
+    .articulo1 {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+    .imagen-gb {
+        width: 5px;
+        height: 10px;
+        margin-bottom: 20px;
+    }
+    .imagen-articulo1 {
+        width: 100%;
+        margin-right: 0;    
+    }
+    .contenido-articulo1 ul{
         display: flex;
         flex-direction: column;
+        align-items: space-around;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+    
+    .contenido-articulo1 a img{
+        width: 25px;
+    }
+    .contenedor-cajas {
+        flex-direction: column;
+    }
+    .contenedor-cajas .caja-accesorio {
+        width: 100%;
+    }
+    .formulario{
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .areas-edicion{
+        width: 100%;
+        justify-content: space-around;
     }
 
 }
